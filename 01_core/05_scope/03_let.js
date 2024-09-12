@@ -26,8 +26,6 @@ let x;   // console.log(x)를 주석처리 안하고 실행하면 호이스팅�
 
 let y = 1;    //if문안의 y랑 여기 y랑은 다른 y이다!
 if(true){    //조건문 안에서도 호이스팅이 된다!
-    
-    let y = 2;
     console.log(y);
+    let y = 2;
 }  //if 문안에 호이스팅이 되어서 오류가뜬다!
-console.log(y);

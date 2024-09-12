@@ -22,7 +22,7 @@ console.log(age);
 // 생성자 함수가 new 없이 호출 되는 것을 방지하기 위해
 function Dog(name,age){
 
-    if(!new.target){  // new.target이 Falsy면 !에 의해 true가 되므로 new Dog();을 반환해준다!
+    if(!new.target){  // 만약 객체를 만들 때 new가 없으면 new.target이 Falsy가 되고, !에 의해 true가 되므로 new Dog();을 반환해준다!
         return new Dog(name,age);
     }
     this.name = name;
@@ -33,3 +33,4 @@ function Dog(name,age){
 // new 연산자와 함께 호출 되었는지를 확인한 후 적절하게 반환한다..
 const obj = Object(); //new를 자동으로 추가해서 호출해준다!
 console.log(obj);
+

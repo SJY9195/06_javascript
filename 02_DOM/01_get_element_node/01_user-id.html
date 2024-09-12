@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>01. id 를 이용한 요소 노드 취득</h1>
+
+
+    <p>
+        노드는 DOM 트리를 구성하는 기본 단위이다..
+        HTML 문서가 로드되면 브라우저는 이를 파싱하여 DOM 트리를 생성하고 <!--작성한 코드를 브라우저에 띄워주기 위한 과정(브라우저가 코드를을 '파싱'이라한다, 그 과정에 의해 브라우저에 띄워지는것을 (화면에 출력된것을) 렌더링이라 한다.-->
+        각 HTML 태그와 그 내용을 노드로 표현하는데
+        그 유형으로는 요소 노드(p,a 등 태그 들),
+        속성 노드(html 요소의 속성들 class,id등),
+        텍스트 노드(요소 내의 텍스트) 등이 있다..
+    </p>
+
+    <p>
+        Document.getElementById() 메소드는 인수로 전달한
+        id 속성 값을 갖는 하나의 요소 노드를 탐색하여 반환한다..
+        문서 내의 중복 된 id 값을 갖는 html 요소가 여러 개 존재
+        하더라도 에러가 발생하진 않지만 해당 id 값을 갖는
+        첫 번째 요소 노드만 반환한다.
+    </p>
+
+
+    <div id="area1" class="area">
+        div영역
+        <p id="area2">p 영역</p>
+    </div>
+
+    <script>
+        const $elem = document.getElementById("area1");
+        $elem.style.backgroundColor="skyblue";
+        console.log($elem);
+        
+        area2.style.backgroundColor="red";
+
+        let changeColor = 0;
+        for (let i=0; i <$lists.length; i++){
+            $lists[i].style.barckgroundColor = "rgb(130,200,)"
+            changeColor += 50;
+        }
+
+        [...$list].forEach(list => list.style.color = "blue");
+
+        const $lists2 = document.getElementsByClassName("li");
+        [...$lists2].forEach(list => list.style.color = "red");
+
+    </script>
+</body>
+</html>

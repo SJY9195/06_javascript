@@ -40,7 +40,7 @@ outer();
 
 var i = 0;
 
-for(var i=0; i<10; i++){}
+for(var i=0; i<10; i++){}   //let i=0; 으로 초기화하면 결과가 0으로 출력된다! var i = 0; 이 for문을 인정 안해서이다!
 
 console.log(i);
 
