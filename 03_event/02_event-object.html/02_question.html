@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--
+        버튼 3개를 만들어서
+        1번을 누르면 안녕하세요가 빨간색으로
+        2번을 누르면 안녕하세요가 hi로
+        3번을 누르면 hi 라는 alert 출력
+    -->
+
+    <h1 id = "message">안녕하세요</h1>
+    <!--<button id = "btn1">버튼</button>
+    <button id = "btn2">버튼2</button>
+    <button id = "btn3">버튼3</button>
+
+    <script>
+        const $button = document.getElementById("btn1");
+
+        const $msg = document.getElementById("message");
+
+        const handleClick = () => $msg.style.color = "red";
+
+        $button.onclick = handleClick;
+
+        const $button2 = document.getElementById("btn2");
+
+        const handleClick2 =  () => $msg.innerHTML = "hi";
+
+        $button2.onclick = handleonClick;
+
+        const $button3 = document.getElementById("btn3");
+
+        const handleClick3 = () => alert("hi");
+
+        $button3.onclick = handleClick3;
+
+
+    </script> 나의 답-->
+    <button onclick="click1()">버튼1</button>
+    <button onclick="click2()">버튼2</button>
+    <button onclick="click3()">버튼3</button>
+
+    <script>
+        const $h1 = document.getElementById("message");
+
+        function click1(){
+            $h1.style.color="red";
+        }
+        function click2(){
+            $h1.innerHTML="hi";
+        }
+        function click3(){
+            alert("hi");
+        }
+    </script>
+</body>
+</html>
